@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Lehrbegleiter</title>
+  <meta name="description" content="Deine Unterrichtswoche auf einen Blick: Stundenplan, Vertretungen und erteilte Hausaufgaben.">
+  <meta name="theme-color" content="#0c0a1d">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Lehrbegleiter">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <header class="topbar">
+    <a class="brand" href="#heute">
+      <img src="icons/icon.svg" alt="" width="30" height="30">
+      <span>Lehrbegleiter</span>
+    </a>
+    <nav class="tabs" aria-label="Hauptnavigation">
+      <a href="#heute" data-tab="heute"><span aria-hidden="true">⚡</span><b>Heute</b></a>
+      <a href="#woche" data-tab="woche"><span aria-hidden="true">🗓️</span><b>Woche</b></a>
+      <a href="#hausaufgaben" data-tab="hausaufgaben"><span aria-hidden="true">📚</span><b>Aufgaben</b></a>
+      <a href="#einstellungen" data-tab="einstellungen"><span aria-hidden="true">⚙️</span><b>Einstellungen</b></a>
+    </nav>
+  </header>
+
+  <main id="view" tabindex="-1"></main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
